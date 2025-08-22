@@ -1,13 +1,11 @@
-import React, { useEffect, useCallback, useState, Fragment } from 'react';
+import React from 'react';
 import {
   Text,
   View,
   FlatList,
-  ToastAndroid,
   TouchableOpacity,
 } from 'react-native';
-import { useDispatch } from 'react-redux';
-import { Chip, Divider, FAB, Surface } from 'react-native-paper';
+import { Chip, Divider, Surface } from 'react-native-paper';
 import {
   setFilter,
   setSortBy
@@ -165,7 +163,6 @@ const Dashboard = () => {
             />
           )}
           showsVerticalScrollIndicator={false}
-          //optimization
           windowSize={5}
           removeClippedSubviews
           initialNumToRender={10}

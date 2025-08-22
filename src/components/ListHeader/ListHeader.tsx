@@ -1,7 +1,5 @@
 import React from 'react';
-// import CountTile from './CountTile';
-// import {colors, fonts} from '../theme';
-import {Text, View, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import CountTile from '../CountTile/CountTile';
 import { colors } from '../../themes/colors';
 import { fonts } from '../../themes/fonts';

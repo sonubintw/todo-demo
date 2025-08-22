@@ -1,8 +1,4 @@
 import React, {Fragment, memo} from 'react';
-// import moment from 'moment';
-// import {colors, fonts} from '../theme';
-// import {Todo} from '../redux/todoSlice';
-import {Avatar} from 'react-native-paper';
 import BouncyCheckbox from 'react-native-bouncy-checkbox';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import { Todo } from '../../redux/slice/todoTypes';

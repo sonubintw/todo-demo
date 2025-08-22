@@ -26,7 +26,6 @@ const AddTodoScreen = () => {
 
     return (
         <SafeAreaView style={[globalStyles.rootContainer]}>
-            {/* <View style={{backgroundColor:'red'}}> */}
 
             <View style={{ marginBlock: 30, gap: 10}}>
                 <Text style={todoStyles.heading}>{nomenclature.ENTER_TODO}</Text>
@@ -58,7 +57,6 @@ const AddTodoScreen = () => {
                 onPress={handleSave}>
                 <Text style={todoStyles.btnText}>Add TODO</Text>
             </TouchableOpacity>
-            {/* </View> */}
         </SafeAreaView>
     );
 };

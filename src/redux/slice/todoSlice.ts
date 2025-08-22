@@ -1,6 +1,3 @@
-import axios from 'axios';
-// import moment from 'moment';
-// import {RootState} from './store';
 import {
     createSlice,
     createAsyncThunk,
@@ -10,11 +7,9 @@ import {
 
 
 import { Todo, TodosState } from "./todoTypes";
-import { get } from 'react-native/Libraries/TurboModule/TurboModuleRegistry';
 import { getCurrentTimestamp, getRandomUUID } from '../../global/globalFunctions';
 import { makeApiCall } from '../../global/makeApiCall';
 import { RootState } from '../store';
-import { useSelector } from 'react-redux';
 import { BASE_URL } from '../../constants/apiRoutes';
 
 
