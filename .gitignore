@@ -1,34 +1,184 @@
-# Gradle files
-.gradle/
+# === React Native .gitignore (2025) ===
+# Based on the React Native Community template and GitHub's gitignore collection.
+# Keep lockfiles (yarn.lock/package-lock.json/pnpm-lock.yaml) COMMITTED.
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node / tooling
+node_modules/
+.npm/
+.pnpm-store/
+.eslintcache
+.cache/
+.tmp/
+coverage/
+dist/
 build/
 
-# Local configuration file (sdk path, etc)
-local.properties
+# TypeScript
+*.tsbuildinfo
 
-# Log/OS Files
-*.log
+# Jest
+.jest/
+coverage/
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+# Metro / bundler caches
+.expo-shared
+.packager
+# If using Expo, you may also want to ignore:
+# .expo/
+# .expo/packager-info.json
+# .expo/metro-cache/
 
-# IntelliJ
+# Environment files
+.env
+.env.*
+!.env.example
+
+# ================= Android =================
+android/.gradle/
+android/.idea/
+android/build/
+android/app/build/
+android/local.properties
 *.iml
+
+# Android keystores (DO NOT commit release keys)
+android/app/*.keystore
+android/app/*.jks
+
+# Gradle caches
+.gradle/
+**/build/
+
+# ================= iOS =================
+ios/build/
+ios/DerivedData/
+# CocoaPods — many teams prefer not to commit Pods
+ios/Pods/
+
+# Xcode user data
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Ruby / Bundler (often used for CocoaPods)
+ios/.bundle/
+vendor/bundle/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+fastlane/readme.md
+
+# IDEs
+.vscode/
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+*.swp
+*.swo
 
-# Keystore files
-*.jks
-*.keystore
+# Misc
+*.orig
+*.rej
+*.patch
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# OSX
+#
+.DS_Store
 
-# Android Profiling
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+ios/.xcode.env.local
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
 *.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Bundle artifact
+*.jsbundle
+
+# Ruby / CocoaPods
+/ios/Pods/
+/vendor/bundle/
+
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*
+
+# testing
+/coverage
+
+ios/build/
+ios/DerivedData/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcworkspace/xcshareddata/
+ios/*.xcodeproj/project.xcworkspace/
+ios/*.xcodeproj/xcuserdata/
